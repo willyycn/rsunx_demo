@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+let demo = require('../core/demo');
+demo.set('port', 3000);
+demo.listen(demo.get('port'),function () {
+    console.log('Server listening on port: ' + demo.get('port'))
+});
