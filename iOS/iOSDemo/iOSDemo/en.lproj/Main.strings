@@ -1,0 +1,36 @@
+
+/* Class = "UIButton"; normalTitle = "退出用户"; ObjectID = "0U9-ws-VNa"; */
+"0U9-ws-VNa.normalTitle" = "退出用户";
+
+/* Class = "UIButton"; normalTitle = "高安全级别操作"; ObjectID = "6MP-tK-CZL"; */
+"6MP-tK-CZL.normalTitle" = "高安全级别操作";
+
+/* Class = "UITextField"; placeholder = "密码"; ObjectID = "BX3-62-T1g"; */
+"BX3-62-T1g.placeholder" = "密码";
+
+/* Class = "UIButton"; normalTitle = "登陆"; ObjectID = "CLE-V2-f6Y"; */
+"CLE-V2-f6Y.normalTitle" = "登陆";
+
+/* Class = "UITextField"; placeholder = "验证码"; ObjectID = "IKv-gg-Tth"; */
+"IKv-gg-Tth.placeholder" = "验证码";
+
+/* Class = "UITextField"; placeholder = "密码"; ObjectID = "O9R-ay-P1F"; */
+"O9R-ay-P1F.placeholder" = "密码";
+
+/* Class = "UILabel"; text = "高安全算法"; ObjectID = "Rxy-OL-hhO"; */
+"Rxy-OL-hhO.text" = "高安全算法";
+
+/* Class = "UIButton"; normalTitle = "低安全级别操作"; ObjectID = "ajP-Ea-h9w"; */
+"ajP-Ea-h9w.normalTitle" = "低安全级别操作";
+
+/* Class = "UITextField"; placeholder = "手机号"; ObjectID = "cSD-Di-Bex"; */
+"cSD-Di-Bex.placeholder" = "手机号";
+
+/* Class = "UITextField"; placeholder = "验证密码"; ObjectID = "hCM-wJ-tZp"; */
+"hCM-wJ-tZp.placeholder" = "验证密码";
+
+/* Class = "UIButton"; normalTitle = "验证码"; ObjectID = "s5J-V8-q3L"; */
+"s5J-V8-q3L.normalTitle" = "验证码";
+
+/* Class = "UITextField"; placeholder = "手机号"; ObjectID = "vqI-o1-jkj"; */
+"vqI-o1-jkj.placeholder" = "手机号";

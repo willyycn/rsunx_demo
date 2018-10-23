@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ETs-PF-Qbw">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="SnN-CY-hbU">
+            <objects>
+                <viewController storyboardIdentifier="EnrollView" id="ETs-PF-Qbw" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0K6-2N-LEC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="TOKEN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cSD-Di-Bex" userLabel="TokenTF">
+                                <rect key="frame" x="32" y="82" width="256" height="42"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RcY-VZ-j4V" userLabel="PwdTF">
+                                <rect key="frame" x="32" y="145.5" width="256" height="44"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dv-0o-uK1">
+                                <rect key="frame" x="32" y="206" width="256" height="42"/>
+                                <color key="backgroundColor" red="0.042204059049999999" green="0.59941395630000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="获取私钥">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="generate:" destination="ETs-PF-Qbw" eventType="touchUpInside" id="vgz-gS-vgs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9B-Hq-Ukm">
+                                <rect key="frame" x="32" y="271" width="256" height="44"/>
+                                <color key="backgroundColor" red="0.042204059049999999" green="0.59941395630000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="验签">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="generate:" destination="ETs-PF-Qbw" eventType="touchUpInside" id="Umt-KM-Fgh"/>
+                                    <action selector="send_msg:" destination="ETs-PF-Qbw" eventType="touchUpInside" id="eFe-OS-j7k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="U9B-Hq-Ukm" firstAttribute="width" secondItem="0K6-2N-LEC" secondAttribute="width" multiplier="0.8" id="240-di-tfb"/>
+                            <constraint firstItem="U9B-Hq-Ukm" firstAttribute="height" secondItem="0K6-2N-LEC" secondAttribute="height" multiplier="0.077" id="9eL-Gr-sml"/>
+                            <constraint firstItem="RcY-VZ-j4V" firstAttribute="width" secondItem="0K6-2N-LEC" secondAttribute="width" multiplier="0.8" id="Ci4-MB-osE"/>
+                            <constraint firstItem="4Dv-0o-uK1" firstAttribute="centerX" secondItem="W90-Q3-cZb" secondAttribute="centerX" id="Kob-pA-9nN"/>
+                            <constraint firstItem="cSD-Di-Bex" firstAttribute="width" secondItem="W90-Q3-cZb" secondAttribute="width" multiplier="0.8" id="Okv-z7-aei"/>
+                            <constraint firstItem="cSD-Di-Bex" firstAttribute="centerX" secondItem="W90-Q3-cZb" secondAttribute="centerX" id="Pvx-Sr-TqI"/>
+                            <constraint firstItem="U9B-Hq-Ukm" firstAttribute="centerX" secondItem="W90-Q3-cZb" secondAttribute="centerX" id="Raw-YS-KHq"/>
+                            <constraint firstItem="U9B-Hq-Ukm" firstAttribute="centerY" secondItem="W90-Q3-cZb" secondAttribute="centerY" multiplier="0.995" id="Uwm-hn-EY5"/>
+                            <constraint firstItem="cSD-Di-Bex" firstAttribute="height" secondItem="W90-Q3-cZb" secondAttribute="height" multiplier="0.077" id="VqF-IK-gsX"/>
+                            <constraint firstItem="4Dv-0o-uK1" firstAttribute="centerY" secondItem="W90-Q3-cZb" secondAttribute="centerY" multiplier="0.84" constant="-20" id="ZAy-Xq-z5J"/>
+                            <constraint firstItem="cSD-Di-Bex" firstAttribute="centerY" secondItem="W90-Q3-cZb" secondAttribute="centerY" multiplier="0.35" id="c14-Sy-Wbf"/>
+                            <constraint firstItem="RcY-VZ-j4V" firstAttribute="centerY" secondItem="W90-Q3-cZb" secondAttribute="centerY" multiplier="0.57" id="f5G-pU-SyD"/>
+                            <constraint firstItem="4Dv-0o-uK1" firstAttribute="width" secondItem="W90-Q3-cZb" secondAttribute="width" multiplier="0.8" id="fTI-pw-aot"/>
+                            <constraint firstItem="RcY-VZ-j4V" firstAttribute="centerX" secondItem="W90-Q3-cZb" secondAttribute="centerX" id="mNT-xa-2Ui"/>
+                            <constraint firstItem="4Dv-0o-uK1" firstAttribute="height" secondItem="W90-Q3-cZb" secondAttribute="height" multiplier="0.077" id="mud-4G-9pA"/>
+                            <constraint firstItem="RcY-VZ-j4V" firstAttribute="height" secondItem="0K6-2N-LEC" secondAttribute="height" multiplier="0.077" id="pxJ-kG-Rmb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W90-Q3-cZb"/>
+                    </view>
+                    <connections>
+                        <outlet property="generateBTN" destination="4Dv-0o-uK1" id="NVB-v4-6iG"/>
+                        <outlet property="passwdTF" destination="RcY-VZ-j4V" id="0V3-qa-ar8"/>
+                        <outlet property="tokenTF" destination="cSD-Di-Bex" id="OGr-W2-hzK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eM2-e6-xpa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-856.875" y="44.366197183098592"/>
+        </scene>
+    </scenes>
+</document>
