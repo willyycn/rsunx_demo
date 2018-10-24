@@ -59,11 +59,13 @@ exports.getParam = function(callback){
         res.on('end', function () {
             try{
                 let obj = JSON.parse(d);
-                let para = obj.para;
-                callback(0,para,"");
+                let para = obj.comm_param;
+                let srv_token = obj.srv_token;
+                let t_chk_sum = obj.t_chk_sum;
+                callback(0,para,srv_token,t_chk_sum);
             }
             catch (e) {
-                callback(1, "", e);
+                callback(1, e);
             }
         });
     });
