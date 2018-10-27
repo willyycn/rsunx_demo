@@ -1,4 +1,7 @@
 # coding=utf-8
+  # Created by willyy on 2018/10/22.
+  # 此脚本展示了如何集成rsun api. 在内网情况下, 业务服务器和R-Sun-Server不必使用双向认证,
+  # 但是在其他环境下, 建议业务服务器和R-Sun-Server要建立双向认证, 具体如何建立双向认证可以查看相关文档.
 import requests
 import urllib.parse
 class RSunX:
