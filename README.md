@@ -3,7 +3,7 @@ RSUNX Clownfish(Blue) Demo
 
 Have Fun! Fishers!
 
-Server端NodeJS, iOS平台, Android平台, 为全功能代码
+NodeJS服务端, iOS客户端, Android客户端, 为全功能代码
 
 其他语言平台如Go, Java, Python, PHP, 岸思均提供对应接口文件
 
