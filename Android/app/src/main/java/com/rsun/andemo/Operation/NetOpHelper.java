@@ -22,9 +22,9 @@ import retrofit2.Retrofit;
 public class NetOpHelper {
     private static final String TAG = "NetOpHelper";
     public static final String ServerUrl = "http://10.10.252.13:8000";
-    public static final String ServerParam = "fca9952d08b178ffcf8ee03750e425f63a68e32d24f38e26e65f59dc8a056460545ed89a8c175dda576d62dc1d6ba3e092b5a34495525de1c71961ec11b7dbea";
+    public static final String ServerParam = "412a9e72f2120b69d685200d834d4a3e5349c09ba00583f762929af5c6379c6dcdab5ad96b5ee53e5ad0ac912f57a347da3ff4fb474847e534040086c0830b2d";
     public static final String ServerToken = "{\"neo_server\":\"willyy@R-Sun-X\"}";
-    public static final String ServerChkSum = "a2c51e7056bc315df8ce67d8330564803598ac10909c53f10f33fd3c7aba46603add8883c4ea88b5bb6c778f00e47836470918b720e92a068db0005a6c0df643";
+    public static final String ServerChkSum = "5adad94944b686f8b47d237681d4f0ce5fc89d4d14b1f4a8d38866ef37031e1c654d9826bc67b931d0836d8676957d959e40560054c3a6e4601754698f7c99ca";
     private static NetOpHelper mHelper = null;
     private Retrofit retrofit;
     private Context mContext;
