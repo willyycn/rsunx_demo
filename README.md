@@ -1,7 +1,7 @@
 # rsunx_demo
-RSUNX Clownfish(Blue) Demo
+RSUNX OpenToken(Blue) Demo
 
-Have Fun! Fishers!
+Have Fun! Thinkers!
 
 NodeJS服务端, iOS客户端, Android客户端, 为全功能代码
 
